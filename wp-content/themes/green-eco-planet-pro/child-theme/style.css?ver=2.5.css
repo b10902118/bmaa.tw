@@ -1,0 +1,30 @@
+/** 
+* Givewp CSS
+*/
+
+.single-give_forms .give_forms{
+    padding-top: 0;
+}
+
+.detail-content.single_page.eb_page .give_error, 
+.detail-content.single_page.eb_page .give_success, 
+.detail-content.single_page.eb_page .give_warning {
+    padding: 1em 1.5em 1em 2em;
+}
+
+#give_donation_receipt th {
+    padding: 15px;
+}
+
+#give_donation_receipt td {
+    padding: 12px 20px;
+}
+
+form#give-email-access-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form#give-email-access-form input#give-email {
+    width: 100%;
+}
