@@ -1,5 +1,4 @@
-import React, { useState, useRef } from "react";
-import { ThumbsUp, ChevronLeft, ChevronRight } from "lucide-react";
+import { ThumbsUp } from "lucide-react";
 
 const StudentTestimonials = () => {
   const testimonials = [
