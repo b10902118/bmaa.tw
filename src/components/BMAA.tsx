@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "./Hero";
+import HeroSection from "./HeroSection";
 import Header from "./Header";
 import IntroSection from "./IntroSection";
 import DesireSection from "./DesireSection";
