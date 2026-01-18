@@ -2,7 +2,7 @@ const IntroSection = () => {
   return (
     <section
       id="start"
-      className="py-16 lg:py-24 bg-[#E1B28D]/10 scroll-mt-16 lg:scroll-mt-24"
+      className="py-16 lg:py-24 bg-[#E1B28D]/10 scroll-mt-16 lg:scroll-mt-20"
     >
       <div className="max-w-[88%] lg:max-w-[77%] 2xl:max-w-[66%] mx-auto px-4 grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
         <div>
@@ -19,7 +19,7 @@ const IntroSection = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="relative rounded-2xl overflow-hidden max-h-[33vh] shadow-2xl aspect-video">
+          <div className="relative rounded-2xl overflow-hidden max-h-[33vh] xl:max-h-none shadow-2xl aspect-video">
             <video
               className="w-full h-full object-cover"
               autoPlay
