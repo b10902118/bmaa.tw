@@ -1,5 +1,3 @@
-import React from "react";
-
 const PartnersSection = () => {
   return (
     <section className="py-15 lg:py-20">
