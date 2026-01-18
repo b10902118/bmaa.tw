@@ -22,7 +22,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="fixed top-0 left-0 w-full z-[9999] bg-[#F9F5F2]/95 backdrop-blur-sm shadow-sm">
-      <div className="max-w-[1140px] mx-auto flex items-center justify-between px-4 py-3 lg:py-6">
+      <div className="max-w-[1140px] mx-auto flex items-center justify-between px-4 py-3 lg:py-4">
         <div className="flex flex-col">
           <a
             href="/"

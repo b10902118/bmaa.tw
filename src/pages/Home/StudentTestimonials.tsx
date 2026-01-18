@@ -19,7 +19,7 @@ const StudentTestimonials = () => {
       name: "銘章",
       tag: "#平靜 #壓力因應",
       content:
-        "比起鬧哄哄的心智狀態，練習完BMAA之後可以帶給我很大的平靜，讓我可以去面對即將到來的大風大浪。",
+        "比起鬧哄哄的心智狀態，練習完 BMAA之後可以帶給我很大的平靜，讓我可以去面對即將到來的大風大浪。",
     },
     /*
     {
@@ -45,7 +45,7 @@ const StudentTestimonials = () => {
         </h2>
         {/* overlay controls + swipe area */}
         <div className="relative">
-          <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 xl:px-12">
+          <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 xl:px-4">
             {testimonials.map((item, idx) => (
               <div
                 key={idx}

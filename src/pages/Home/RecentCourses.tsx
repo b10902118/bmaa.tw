@@ -73,7 +73,7 @@ const RecentCourses = () => {
         <h3 className="text-3xl font-bold text-[#588157] mb-8 border-b-2 border-[#588157]/20 pb-2">
           體驗課
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {trialClasses.map((course, idx) => (
             <CourseCard key={idx} course={course} />
           ))}
@@ -83,7 +83,7 @@ const RecentCourses = () => {
         <h3 className="text-3xl font-bold text-[#588157] mb-8 border-b-2 border-[#588157]/20 pb-2">
           基礎課程（一）
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {foundationCourses.map((course, idx) => (
             <CourseCard key={idx} course={course} />
           ))}
