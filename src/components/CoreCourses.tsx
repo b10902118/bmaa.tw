@@ -5,7 +5,7 @@ const CoreCourses = () => {
     {
       title: "基礎課程(一)",
       subtitle: "鬆動身與心",
-      icon: "/assets/image/water.png",
+      icon: "/assets/image/icons/water.png",
       items: [
         "調息靜觀技巧：讓大腦安靜及身心放鬆的關鍵",
         "簡易自我按摩方法：緩解緊繃僵硬的身體",
@@ -16,7 +16,7 @@ const CoreCourses = () => {
     {
       title: "基礎課程(二)",
       subtitle: "返回身心安頓的家",
-      icon: "/assets/image/mountain-road.png",
+      icon: "/assets/image/icons/mountain-road.png",
       items: [
         "深化身心中軸狀態：培養身心穩定力量",
         "漸入核心的鬆動：鬆胯展脊、開展靈活自在",
@@ -27,7 +27,7 @@ const CoreCourses = () => {
     {
       title: "深化工作坊",
       subtitle: "主題式整合練習",
-      icon: "/assets/image/undulating-arrow-1.png",
+      icon: "/assets/image/icons/undulating-arrow-1.png",
       items: [
         "主題式練習：如提升肩胛骨、骨盆等部位之能動性",
         "練習再深化：促進身心流動與持續突破",

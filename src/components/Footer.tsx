@@ -24,7 +24,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <img
-              src="/assets/image/80x15.png"
+              src="/assets/image/icons/ccby.png"
               alt="CC License"
               className="mb-4"
             />

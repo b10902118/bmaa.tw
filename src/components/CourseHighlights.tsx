@@ -30,7 +30,7 @@ const CourseHighlights = () => {
         <div className="flex justify-center">
           <div className="rounded-3xl overflow-hidden shadow-xl lg:border-8 border-white">
             <img
-              src="/assets/image/截圖-2022-09-06-上午11.19.27.png"
+              src="/assets/image/teach.png"
               alt="指導"
               className="w-full h-full object-cover"
             />

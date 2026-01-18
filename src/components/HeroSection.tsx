@@ -10,8 +10,7 @@ const HeroSection: React.FC = () => {
       <div
         className="absolute inset-0 bg-cover bg-center-top bg-position-[center_top_10%] transition-transform duration-1000"
         style={{
-          backgroundImage:
-            'url("/assets/image/169787839_10158607295594652_5746760532255582471_n.jpg")',
+          backgroundImage: 'url("/assets/image/mountain-bg.jpg")',
         }}
       >
         <div className="absolute inset-0 bg-black/15"></div>

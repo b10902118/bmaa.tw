@@ -2,10 +2,10 @@ import { ChevronRight } from "lucide-react";
 
 const DesireSection = () => {
   const desires = [
-    { img: "/assets/image/healthy250.png", text: "身體舒暢不痠痛" },
-    { img: "/assets/image/sleep250.png", text: "好好睡一覺" },
-    { img: "/assets/image/learning250.png", text: "能專心、記憶好" },
-    { img: "/assets/image/peace-of-mind250.png", text: "情緒穩定不焦躁" },
+    { img: "/assets/image/icons/healthy250.png", text: "身體舒暢不痠痛" },
+    { img: "/assets/image/icons/sleep250.png", text: "好好睡一覺" },
+    { img: "/assets/image/icons/learning250.png", text: "能專心、記憶好" },
+    { img: "/assets/image/icons/peace-of-mind250.png", text: "情緒穩定不焦躁" },
   ];
 
   return (

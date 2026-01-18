@@ -26,7 +26,7 @@ const IntroSection = () => {
               muted
               loop
               playsInline
-              src="/assets/video/20230130動態影片示範-1.mp4"
+              src="/assets/video/demo.mp4"
             />
           </div>
         </div>

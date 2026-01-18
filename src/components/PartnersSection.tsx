@@ -13,7 +13,7 @@ const PartnersSection = () => {
             className="transition-opacity hover:opacity-70"
           >
             <img
-              src="/assets/image/logo.png"
+              src="/assets/image/partners/mbha.png"
               alt="MBHA Logo"
               className="h-20 object-contain"
             />
@@ -25,7 +25,7 @@ const PartnersSection = () => {
             className="transition-opacity hover:opacity-70"
           >
             <img
-              src="/assets/image/logo-horizontal-1.png"
+              src="/assets/image/partners/promise-clinic.png"
               alt="Promise Clinic Logo"
               className="h-20 object-contain"
             />

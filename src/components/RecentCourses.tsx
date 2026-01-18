@@ -11,23 +11,23 @@ type Course =
 
 const trialClasses: Course[] = [
   {
-    img: "/assets/image/260117古池蛙.png",
+    img: "/assets/image/courses/260117古池蛙.png",
     open: true,
     link: "/class-information/trial-class/2026spring_1/",
   },
   {
-    img: "/assets/image/2025冬季體驗課-忠孝新生1.jpg",
+    img: "/assets/image/courses/2025冬季體驗課-忠孝新生1.jpg",
     open: false,
   },
   {
-    img: "/assets/image/2025冬季體驗課-古亭.jpg",
+    img: "/assets/image/courses/2025冬季體驗課-古亭.jpg",
     open: false,
   },
 ];
 
 const foundationCourses: Course[] = [
-  { img: "/assets/image/2512220里耘1.jpg", open: false },
-  { img: "/assets/image/251122惟智.jpg", open: false },
+  { img: "/assets/image/courses/2512220里耘1.jpg", open: false },
+  { img: "/assets/image/courses/251122惟智.jpg", open: false },
 ];
 
 const CourseCard = ({ course }: { course: Course }) => {
