@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import MoreButton from "../../components/MoreButton";
 
 const DesireSection = () => {
   const desires = [
@@ -32,7 +33,7 @@ const DesireSection = () => {
           ))}
         </div>
 
-        <div className="max-w-3xl text-xl mx-auto space-y-6 mb-8">
+        <div className="max-w-3xl text-xl mx-auto space-y-6 mb-12">
           <p className="font-bold text-[#333]">
             有時候，不是「你」的問題，而是
             <span className="text-[#be6e56]">「你的身體」沒了能動性</span>
@@ -48,14 +49,7 @@ const DesireSection = () => {
             <span className="text-[#be6e56]">因應壓力</span>，減輕憂鬱焦慮。
           </p>
         </div>
-        <div className="pt-4 text-center">
-          <a
-            href="/evidence"
-            className="inline-flex items-center gap-2 border border-[#6B705C] text-[#333] hover:bg-[#6B705C] hover:text-white px-10 py-4 rounded-full font-bold transition-all transform hover:scale-105"
-          >
-            了解更多研究結果 <ChevronRight className="w-4 h-4" />
-          </a>
-        </div>
+        <MoreButton text="了解更多研究結果" href="/evidence" />
       </div>
     </section>
   );

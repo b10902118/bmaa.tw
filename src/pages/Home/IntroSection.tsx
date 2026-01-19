@@ -2,7 +2,7 @@ const IntroSection = () => {
   return (
     <section
       id="start"
-      className="py-16 lg:py-24 bg-[#E1B28D]/10 scroll-mt-16 lg:scroll-mt-18"
+      className="py-16 lg:py-24 bg-[#E1B28D]/10 scroll-mt-16 lg:scroll-mt-18" /* margin for header when go to here */
     >
       <div className="max-w-[88%] lg:max-w-[77%] 2xl:max-w-[66%] mx-auto px-4 grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
         <div>

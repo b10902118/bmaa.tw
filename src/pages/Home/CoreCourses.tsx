@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import MoreButton from "../../components/MoreButton";
 
 const CoreCourses = () => {
   const courses = [
@@ -51,7 +52,7 @@ const CoreCourses = () => {
     <section className="py-15 lg:py-20 bg-[#E1B28D]/10">
       <div className="max-w-[88%] lg:max-w-[77%] 2xl:max-w-[66%] mx-auto px-4">
         <h2 className="text-4xl font-extrabold text-black mb-16">核心課程</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-10">
           {courses.map((course, idx) => (
             <div key={idx} className="flex flex-col items-center text-center">
               <img
@@ -79,14 +80,7 @@ const CoreCourses = () => {
             </div>
           ))}
         </div>
-        <div className="text-center mt-10">
-          <a
-            href="/class-information"
-            className="inline-block border border-[#6B705C] text-black px-12 py-4 rounded-full font-bold hover:bg-[#6B705C] hover:text-white transition-all transform hover:scale-105"
-          >
-            點我看更多
-          </a>
-        </div>
+        <MoreButton text="點我看更多" href="/class-information" />
       </div>
     </section>
   );

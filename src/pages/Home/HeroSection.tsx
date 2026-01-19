@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
  */
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="h-screen flex items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center-top bg-position-[center_top_10%] transition-transform duration-1000"
         style={{

@@ -1,4 +1,5 @@
 import { ThumbsUp } from "lucide-react";
+import MoreButton from "../../components/MoreButton";
 
 const StudentTestimonials = () => {
   const testimonials = [
@@ -38,7 +39,7 @@ const StudentTestimonials = () => {
 
   return (
     <section className="py-15 lg:py-20">
-      <div className="max-w-[88%] lg:max-w-[77%] 2xl:max-w-[66%] mx-auto px-4">
+      <div className="max-w-[88%] lg:max-w-[77%] 2xl:max-w-[66%] mx-auto px-4 mb-10">
         <h2 className="text-3xl lg:text-4xl font-extrabold text-black mb-12">
           體驗過的學員，他們分享到
         </h2>
@@ -65,14 +66,7 @@ const StudentTestimonials = () => {
           </div>
         </div>
       </div>
-      <div className="text-center mt-10">
-        <a
-          href="/student-feedback"
-          className="inline-block border border-[#6B705C] text-black px-12 py-4 rounded-full font-bold hover:bg-[#6B705C] hover:text-white transition-all transform hover:scale-105"
-        >
-          點我看更多
-        </a>
-      </div>
+      <MoreButton text="點我看更多" href="/student-feedback" />
     </section>
   );
 };
