@@ -26,10 +26,10 @@ const Header = () => {
         <div className="flex flex-col">
           <a
             href="/"
-            className="text-xl lg:text-[25px] hover:text-black transition-colors leading-tight group"
+            className="text-xl lg:text-2xl text-nowrap text-gray-500 hover:text-black transition-colors leading-tight"
           >
             臺灣身心中軸覺察發展中心
-            <span className="block text-xs lg:text-[13px] text-gray-500 tracking-wider group-hover:text-black hover:text-black transition-colors">
+            <span className="block text-xs lg:text-[13px] tracking-wider transition-colors">
               Taiwan Body-Mind Axial Awareness Center
             </span>
           </a>
