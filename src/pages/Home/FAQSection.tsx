@@ -1,13 +1,6 @@
-import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 
 const FAQSection = () => {
-  const [activeFaq, setActiveFaq] = useState<number | null>(0);
-
-  const toggleFaq = (index: number) => {
-    setActiveFaq(activeFaq === index ? null : index);
-  };
-
   const faqs = [
     {
       q: "在身心中軸覺察課程中會學到什麼？為什麼能讓我有所改變？",
@@ -43,27 +36,20 @@ const FAQSection = () => {
         <h2 className="text-4xl font-extrabold text-black mb-12">常見Q&A</h2>
         <div className="space-y-4">
           {faqs.map((faq, idx) => (
-            <div
+            <details
               key={idx}
-              className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+              className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm group"
+              open={false}
             >
-              <button
-                onClick={() => toggleFaq(idx)}
-                className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition-colors"
-              >
+              <summary className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition-colors cursor-pointer list-none">
                 <span className="text-2xl font-bold text-black">{faq.q}</span>
-                {activeFaq === idx ? (
-                  <Minus className="w-5 h-5 text-[#6B705C] hidden lg:visible" />
-                ) : (
-                  <Plus className="w-5 h-5 text-[#6B705C] hidden lg:visible" />
-                )}
-              </button>
-              {activeFaq === idx && (
-                <div className="p-5 border-t border-gray-100 text-xl leading-relaxed animate-fadeIn">
-                  {faq.a}
-                </div>
-              )}
-            </div>
+                <Minus className="w-5 h-5 text-[#6B705C] hidden group-open:block" />
+                <Plus className="w-5 h-5 text-[#6B705C] hidden lg:block group-open:hidden" />
+              </summary>
+              <div className="p-5 border-t border-gray-100 text-xl leading-relaxed animate-fadeIn">
+                {faq.a}
+              </div>
+            </details>
           ))}
         </div>
       </div>

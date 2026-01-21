@@ -1,0 +1,156 @@
+---
+// somehow use this slowdown dev loading
+// import { Menu, X } from "@lucide/astro";
+const navItems = [
+  {
+    title: "關於身心中軸覺察",
+    href: "/good-points/",
+    subItems: [
+      { title: "練習特色", href: "/good-points/" },
+      { title: "科學證據", href: "/evidence/" },
+      { title: "採訪報導", href: "/news/" },
+      { title: "最新消息", href: "/new/" },
+    ],
+  },
+  { title: "課程介紹", href: "/class-information/" },
+  { title: "學員心得", href: "/students-feedback/" },
+  { title: "團隊成員", href: "/members/" },
+  { title: "聯絡我們", href: "/contact-us/" },
+];
+---
+
+<header
+  class="fixed top-0 left-0 w-full z-[9999] bg-[#F9F5F2]/95 backdrop-blur-sm shadow-sm"
+>
+  <div
+    class="max-w-[1140px] 2xl:max-w-[66%] mx-auto flex items-center justify-between px-4 py-3 lg:py-4"
+  >
+    <div class="flex flex-col">
+      <a
+        href="/"
+        class="text-xl lg:text-2xl text-nowrap text-gray-500 hover:text-black transition-colors leading-tight"
+      >
+        臺灣身心中軸覺察發展中心
+        <span
+          class="block text-xs lg:text-[13px] tracking-wider transition-colors"
+        >
+          Taiwan Body-Mind Axial Awareness Center
+        </span>
+      </a>
+    </div>
+
+    <nav class="hidden lg:flex items-center space-x-2">
+      {
+        navItems.map((item) => (
+          <div class="relative group">
+            <a
+              href={item.href}
+              class="px-4 py-2 text-[15px] text-black hover:text-[#6B705C] flex items-center transition-colors font-medium"
+            >
+              {item.title}
+              {item.subItems && (
+                <svg
+                  class="ml-1 w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              )}
+            </a>
+            {item.subItems && (
+              <div class="absolute top-full left-0 w-full bg-[#F9F5F2] shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border-t-2 border-[#6B705C] max-h-[60vh] overflow-y-auto">
+                {item.subItems.map((sub) => (
+                  <a
+                    href={sub.href}
+                    class="block px-6 py-3 text-[14px] text-black hover:bg-white hover:text-[#6B705C] border-b border-gray-100 last:border-0 transition-colors"
+                  >
+                    {sub.title}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        ))
+      }
+    </nav>
+
+    <button id="mobile-menu-toggle" class="lg:hidden p-2">
+      <svg
+        id="menu-icon"
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+      <svg
+        id="close-icon"
+        class="w-6 h-6 hidden"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div
+    id="mobile-menu"
+    class="hidden lg:hidden bg-[#F9F5F2] border-t px-4 pb-6 absolute w-full left-0 shadow-lg max-h-[100vh] overflow-y-auto"
+  >
+    {
+      navItems.map((item) => (
+        <div class="border-b border-gray-200">
+          <a
+            href={item.href}
+            class="block py-4 text-black font-medium hover:text-[#6B705C] transition-colors"
+          >
+            {item.title}
+          </a>
+          {item.subItems && (
+            <div class="mt-[-5px] pl-4 pb-2">
+              {item.subItems.map((sub) => (
+                <a
+                  href={sub.href}
+                  class="block py-2 text-gray-600 hover:text-[#6B705C] transition-colors"
+                >
+                  {sub.title}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      ))
+    }
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById("mobile-menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  toggle?.addEventListener("click", () => {
+    menu?.classList.toggle("hidden");
+    menuIcon?.classList.toggle("hidden");
+    closeIcon?.classList.toggle("hidden");
+  });
+</script>
