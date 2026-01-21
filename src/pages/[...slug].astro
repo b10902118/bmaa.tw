@@ -1,0 +1,48 @@
+---
+import { glob } from "glob";
+import path from "path";
+
+// https://docs.astro.build/en/guides/routing/#example-dynamic-pages-at-multiple-levels
+export function getStaticPaths() {
+  const files = glob.sync("src/pages/**/index.tsx");
+  const routes = files.map((file) => {
+    // Use posix path for consistency
+    const posixFile = file.split(path.sep).join(path.posix.sep);
+    // Remove 'src/pages' and '/index.tsx'
+    const pagePath = posixFile
+      .replace(/^src\/pages\//, "")
+      .replace(/\/index\.tsx$/, "");
+    const slug =
+      pagePath === "" || pagePath === "index.tsx" ? undefined : pagePath;
+    return {
+      params: {
+        slug,
+      },
+      props: {
+        file,
+      },
+    };
+  });
+  return routes;
+}
+
+const { file } = Astro.props;
+
+import Layout from "../layouts/Layout.astro";
+
+// some import hack to pass vite's dynamic import limitation
+// https://vite.dev/guide/features#glob-import
+const pageModules = import.meta.glob("../../src/pages/**/index.tsx");
+// glob from the script's directory src/pages
+
+const { default: Page, title } = (await pageModules[
+  `./${file.slice("src/pages/".length)}`
+]()) as {
+  default: React.FC;
+  title?: string;
+};
+---
+
+<Layout title={title}>
+  <Page />
+</Layout>

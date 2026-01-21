@@ -1,4 +1,3 @@
-import { ChevronRight } from "lucide-react";
 import MoreButton from "../../components/MoreButton";
 
 const DesireSection = () => {
