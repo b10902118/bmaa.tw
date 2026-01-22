@@ -1,0 +1,22 @@
+---
+import Layout from "./Layout.astro";
+
+interface Props {
+  frontmatter: {
+    title: string;
+    author: string;
+  };
+}
+
+const { title } = Astro.props.frontmatter;
+---
+
+<Layout title={title}>
+  <div
+    class="max-w-[88%] lg:max-w-[77%] 2xl:max-w-[66%] mx-auto px-6 md:px-10 lg:px-24 py-18 lg:py-24 mt-16 lg:mt-18 lg:pb-32"
+  >
+    <article class="prose dark:prose-invert prose-lg md:prose-xl max-w-full">
+      <slot />
+    </article>
+  </div>
+</Layout>
