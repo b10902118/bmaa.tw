@@ -2,6 +2,8 @@
 
 ## Get Started
 
+0. `git clone https://github.com/bmaa-tw/bmaa-tw.github.io.git`
+
 1. 先看`package.json`的`script`
 
    ```
