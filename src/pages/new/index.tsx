@@ -4,8 +4,7 @@ import Title from "../../components/Title";
 // Section data array
 const newsSections = [
   {
-    image:
-      "https://i0.wp.com/bmaa.tw/wp-content/uploads/2026/01/BMAA.jpg?fit=615%2C324&ssl=1",
+    image: "/assets/image/BMAA.jpg",
     imageAlt: "BMAA Logo",
     title: "【台灣身心中軸覺察與提升學會】公開徵求會員",
     description: (

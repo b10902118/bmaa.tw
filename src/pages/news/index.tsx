@@ -13,8 +13,7 @@ interface Article {
 // Article data array
 const articles: Article[] = [
   {
-    image:
-      "https://i0.wp.com/bmaa.tw/wp-content/uploads/2022/09/h3.jpg?fit=640%2C446&ssl=1",
+    image: "/assets/image/h3.jpg",
     alt: "心理學與雅樂舞的邂逅",
     title: "心理學與雅樂舞的邂逅，臺大連韻文帶你從「身體覺察」找回幸福感",
     source: "人文島嶼 知識專欄",
@@ -24,8 +23,7 @@ const articles: Article[] = [
     link: "https://humanityisland.nccu.edu.tw/yunnwenlien/",
   },
   {
-    image:
-      "https://i0.wp.com/bmaa.tw/wp-content/uploads/2022/09/3558632-2.jpg?fit=640%2C427&ssl=1",
+    image: "/assets/image/3558632-2.jpg",
     alt: "連韻文：身體正不正",
     title: "連韻文：身體正不正，不只是姿勢問題",
     source: "親子天下",

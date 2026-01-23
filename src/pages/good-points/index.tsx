@@ -52,7 +52,7 @@ const GoodPoints: React.FC = () => {
           <div className="w-full lg:w-1/2">
             <div className="aspect-w-4 aspect-h-3 w-full h-full">
               <img
-                src="https://i0.wp.com/bmaa.tw/wp-content/uploads/2022/06/IMG_0618-scaled.jpg?fit=640%2C480&ssl=1"
+                src="/assets/image/IMG_0618-scaled.jpg"
                 alt="Practice Session"
                 className="w-full h-full max-h-[30vh] lg:max-h-none object-cover rounded-[22px] shadow-sm"
               />
@@ -139,7 +139,7 @@ const GoodPoints: React.FC = () => {
           <div className="w-full lg:w-1/2 p-2 flex items-stretch">
             <div className="aspect-w-3 aspect-h-5 w-full h-full">
               <img
-                src="https://i0.wp.com/bmaa.tw/wp-content/uploads/2022/09/B54B479D-E981-4557-8D25-B55613D96DC3.jpeg?fit=640%2C853&ssl=1"
+                src="/assets/image/B54B479D-E981-4557-8D25-B55613D96DC3.jpeg"
                 alt="Traditional Practice"
                 className="w-full h-full max-h-[30vh] lg:max-h-none object-cover rounded-[22px] shadow-sm"
               />

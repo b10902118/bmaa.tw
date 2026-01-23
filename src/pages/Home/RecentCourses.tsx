@@ -60,7 +60,12 @@ const RecentCourses = () => {
   return (
     <section className="py-15 lg:py-20">
       <div className="max-w-[88%] lg:max-w-[77%] 2xl:max-w-[66%] mx-auto px-4">
-        <h2 className="text-4xl font-extrabold text-black mb-4">近期課程</h2>
+        <h2
+          id="latest_course"
+          className="text-4xl font-extrabold text-black mb-4 scroll-mt-24"
+        >
+          近期課程
+        </h2>
         <p className="text-[20px] mb-12">
           如果您感興趣的課程目前未開課，歡迎您{" "}
           <a href="/contact-us/" className="text-[#87a350] underline">
@@ -80,7 +85,10 @@ const RecentCourses = () => {
         </div>
 
         {/* Foundation I */}
-        <h3 className="text-3xl font-bold text-[#588157] mb-8 border-b-2 border-[#588157]/20 pb-2">
+        <h3
+          id="latest_level1"
+          className="text-3xl font-bold text-[#588157] mb-8 border-b-2 border-[#588157]/20 pb-2 scroll-mt-24"
+        >
           基礎課程（一）
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
