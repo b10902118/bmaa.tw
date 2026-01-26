@@ -2,9 +2,14 @@
 
 ## Get Started
 
-0. `git clone https://github.com/bmaa-tw/bmaa-tw.github.io.git`
+0. 
+```
+git clone https://github.com/bmaa-tw/bmaa-tw.github.io.git
+cd bmaa-tw.github.io
+npm i
+```
 
-1. 先看`package.json`的`script`
+1. 把東西跑起來的指令都在`package.json`的`script`
 
    ```
    "scripts": {
@@ -13,7 +18,7 @@
    },
    ```
 
-   把東西跑起來的指令都在這邊, 對應到 `npm run xx`
+   這邊每項xx, 對應到 `npm run xx`
 
    `dev`是開發用的指令，網頁來說就是升起一個會hot reload的網站，可以邊改程式邊看結果不用刷新
    `build`就是最後把網站輸出的指令，一般都會把結果寫到`dist/`
@@ -24,7 +29,7 @@
 
 ## astro
 
-基本上是把東西組再一起編成靜態網站用的(Static Site Generation, SSG)
+基本上是把東西組再一起編成靜態網站用的(Static Site Generation, SSG)。他也是一個語言，算是比較沒那麼多功能的react。但也能用 js (`Array.map`等) 寫 html 模板。
 
 1. 網站路徑處理：
    `src/pages/[...slug].astro` 會去看`src/pages`下面所有的index.tsx，產生對應的網站路徑，例如class-information/index.tsx就會被對應到`/class-information`。.mdx則是astro本身會自動處理，例如evidence/1.mdx就對應到`/evidence/1`
