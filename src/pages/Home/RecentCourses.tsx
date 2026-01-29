@@ -34,11 +34,21 @@ const CourseCard = ({ course }: { course: Course }) => {
   return (
     <div className="border-2 border-[#6B705C]/20 rounded-[23px] overflow-hidden flex flex-col group">
       <div className="relative aspect-square overflow-hidden">
+        {course.open ? (
+          <a href={course.link}>
+            <img
+              src={course.img}
+              alt="Course"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+          </a>
+        ) : (
         <img
           src={course.img}
           alt="Course"
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
+        )}
       </div>
       <div className="p-6 text-center mt-auto">
         <a
