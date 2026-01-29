@@ -20,7 +20,7 @@ npm i
 
    這邊每項xx, 對應到 `npm run xx`
 
-   `dev`是開發用的指令，網頁來說就是升起一個會hot reload的網站，可以邊改程式邊看結果不用刷新
+   `dev`是開發用的指令，網頁來說就是升起一個會hot reload的網站，可以邊改程式邊看結果不用刷新\
    `build`就是最後把網站輸出的指令，一般都會把結果寫到`dist/`
 
 2. `npm run dev` 升起來改看看，例如把`src/components/Header.astro`的"近期課程"改掉，或多加一個欄位，觀察網站變化。
